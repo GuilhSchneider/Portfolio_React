@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  background: #141414;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

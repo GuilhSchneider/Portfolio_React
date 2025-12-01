@@ -1,0 +1,669 @@
+/* ---------------- HEADER ---------------- */
+.header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  padding: 20px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.425) 0px 3px 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav a {
+  color: #ffffff4f;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: 1.8px;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+/* ---------------- PROFILE TEXT ---------------- */
+#profileText {
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#textsProfile {
+  height: 100%;
+  width: 55%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#profileText img {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+#profileText p {
+  color: #0de0b6d5;
+  font-size: 0.85em;
+  letter-spacing: 1.8px;
+  margin-bottom: 2px;
+}
+
+#profileText h4 {
+  font-size: 2.3em;
+  margin-bottom: 25px;
+}
+
+#profileText a {
+  font-size: 1.05em;
+  border: 2px solid #0de0b6d5;
+  padding: 15px;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+#profileText a:hover {
+  background: #0de0b6d5;
+  color: white;
+}
+
+/* ---------------- PROFILE INFO ---------------- */
+#profileInfo {
+  display: flex;
+  width: 100%;
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  margin-right: 50px;
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.699) 0px 5px 15px;
+}
+
+.profile-about {
+  color: #0DE0B6;
+  letter-spacing: 2.5px;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.profile-desc {
+  letter-spacing: 0.2px;
+  max-width: 500px;
+  opacity: 0.8;
+  font-size: 0.9em;
+  color: #b5b5b5;
+}
+
+/* ---------------- SECTIONS ---------------- */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* ---------------- TECNOLOGIAS ---------------- */
+#tecnologias {
+  display: flex;
+  background: #0D0D0D;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#tecnologias h2 {
+  color: #0DE0B6;
+  letter-spacing: 2.5px;
+  font-size: 32px;
+  font-weight: 700;
+  width: 500px;
+}
+
+.tech-grid {
+  display: flex;
+  width: 1000px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.tech-item {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  filter: grayscale(1);
+  background: #1b1b1b;
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.2s;
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.tech-item img {
+  max-width: 65px;
+  height: auto;
+  margin: 5px 0 25px 0;
+}
+
+.tech-item:hover {
+  filter: grayscale(0);
+  background: #242424;
+}
+
+.tech-item h3 {
+  margin-bottom: 15px;
+}
+
+.tech-item p {
+  color: #b5b5b5;
+}
+
+/* ---------------- PROJETOS ---------------- */
+#projetos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  color: #0DE0B6;
+  letter-spacing: 2.5px;
+  font-size: 32px;
+  font-weight: 700;
+  width: 500px;
+}
+
+.projects-grid {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-card {
+  display: flex;
+  width: 450px;
+  min-height: 390px;
+  background: #0D0D0D;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  transition: 0.2s;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.project-card:hover {
+  /* background: #2A2A2A; */
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 1.4em;
+}
+
+.project-card p {
+  width: 70%;
+  font-size: 0.9em;
+  color: #b5b5b5;
+}
+
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 224px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-item {
+  width: 50px;
+  opacity: 0.5;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  transform: scale(1.07);
+  background: #333333;
+  opacity: 1;
+}
+
+/* ---------------- FOOTER / CONTATO ---------------- */
+.footer {
+  display: flex;
+  padding-top: 50px;
+  background: #0D0D0D;
+  text-align: center;
+  color: white;
+  border-top: 3px solid rgba(0, 0, 0, 0.212);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer h2 {
+  color: #0DE0B6;
+  letter-spacing: 2.5px;
+  font-size: 32px;
+  font-weight: 700;
+  width: 500px;
+  font-size: 1.8em;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.contatoP {
+  margin: 10px 0 10px 0;
+  font-size: 1.4em;
+  color: rgb(196, 196, 196);
+}
+
+.contato-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contato-item img {
+  width: 30px;
+  height: auto;
+  opacity: 0.4;
+  transition: 0.3s ease;
+}
+
+.contato-item img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.footerCopyright {
+  color: rgb(196, 196, 196);
+  font-size: 1.25em;
+  width: 100%;
+  border-top: 3px solid rgba(34, 34, 34, 0.11);
+  padding: 15px 0;
+  margin: 35px 0 0px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.575);
+}
+
+@media (max-width: 1100px) {
+
+  #textsProfile {
+    width: 80%;
+  }
+
+  .tech-grid {
+    width: 90%;
+  }
+
+  .projects-grid {
+    gap: 20px;
+  }
+
+  .project-overlay {
+    height: 190px;
+  }
+
+  .project-card {
+    width: 380px;
+  }
+}
+
+/* --------- 900px (tablets normais) ---------- */
+@media (max-width: 900px) {
+
+  /* Menu */
+  .nav {
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 1em;
+  }
+
+  /* Section Profile */
+  .divAbout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #profileText {
+    height: 600px;
+  }
+
+  #textsProfile {
+    width: 90%;
+  }
+
+  #profileText h4 {
+    font-size: 1.9em;
+  }
+
+  /* Sobre */
+  #profileInfo {
+    padding: 50px 0;
+  }
+
+  .profile-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 220px;
+  }
+
+  .profile-about {
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-desc {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* Tecnologias */
+  #tecnologias h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tech-grid {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .tech-item {
+    width: 260px;
+    height: auto;
+    min-height: 250px;
+  }
+
+  /* Projetos */
+  .section-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-card {
+    width: 380px;
+  }
+
+  .project-overlay {
+    height: 190px;
+  }
+}
+
+/* --------- 600px (celulares) --------- */
+@media (max-width: 600px) {
+
+  /* Header */
+  .header {
+    height: 60px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  /* Profile */
+  #profileText {
+    height: 500px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #profileText img {
+    height: 500px;
+  }
+
+  #textsProfile {
+    width: 90%;
+    align-items: center;
+  }
+
+  #profileText h4 {
+    font-size: 1.6em;
+  }
+
+  #profileText a {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+
+  /* Sobre */
+  .profile-img {
+    width: 190px;
+  }
+
+  .profile-about {
+    font-size: 22px;
+  }
+
+  .profile-desc {
+    font-size: 0.85em;
+  }
+
+  /* Tecnologias */
+  .tech-item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Projetos */
+  .projects-grid {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 90%;
+    min-height: 360px;
+  }
+
+  .project-card p {
+    width: 85%;
+  }
+
+  .project-overlay {
+    height: 233px;
+  }
+
+  /* Contato */
+  .contatoP {
+    font-size: 1.2em;
+  }
+
+  .contato-item img {
+    width: 26px;
+  }
+
+  .footer h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --------- 450px (mobile pequeno) --------- */
+@media (max-width: 450px) {
+
+  /* Header */
+  .nav {
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 0.85em;
+  }
+
+  /* Profile */
+  #profileText {
+    height: 420px;
+  }
+
+  #profileText img {
+    height: 420px;
+  }
+
+  #profileText h4 {
+    font-size: 1.4em;
+  }
+
+  /* Tecnologias */
+  .tech-item img {
+    max-width: 55px;
+  }
+
+  /* Projetos */
+  .project-card {
+    width: 92%;
+  }
+
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+
+  .project-card p {
+    font-size: 0.85em;
+  }
+
+  .project-overlay {
+    height: 180px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .project-overlay {
+    height: 153px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .project-overlay {
+    height: 128px;
+    gap: 15px;
+  }
+}
