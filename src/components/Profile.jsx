@@ -28,7 +28,7 @@ export default function Profile() {
           <h1 className="profile-about">Sobre mim</h1>
 
           <p className="profile-desc">
-            Olá! Meu nome é Guilherme Henrique Schneider e sou estudante de Desenvolvimento de Sistemas no Senai Nami Jafet.
+            Olá! Meu nome é Guilherme Henrique Schneider.
             Tenho paixão por criar interfaces modernas e funcionais, sempre focando na experiência do usuário.
             Estou em busca de novos desafios que me permitam evoluir tecnicamente e contribuir com soluções inovadoras em projetos de tecnologia.
           </p>
